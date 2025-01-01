@@ -17,7 +17,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const desktop = useMediaQuery({ minWidth: 1024 });
-  // console.log(desktop);
+  console.log(desktop);
   const ready = useStore((state) => state.ready);
   useGSAP(
     () => {
