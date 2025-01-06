@@ -56,7 +56,7 @@ const Hero = (props: Props) => {
           start: "top top",
           end: "bottom bottom",
           scrub: 1,
-          markers: true,
+          // markers: true,
         },
       });
 
@@ -78,7 +78,7 @@ const Hero = (props: Props) => {
         y: 40,
         rotate: -25,
         stagger: 0.1,
-        ease: "black.out(3)",
+        ease: "black.out(1.7)",
       });
     },
     { dependencies: [ready] }
