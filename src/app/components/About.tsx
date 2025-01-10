@@ -25,25 +25,29 @@ const About = (props: Props) => {
   ];
 
   return (
-    <div className="text-sky-950 relative about">
-      <View className="h-screen alternative-text-view absolute  left-0 top-0 w-full">
-        <SceneAbout />
-      </View>
-      {sodaBenefits.map((benefit, index) => (
-        <div
-          key={index}
-          className="aboutsub gap-x-12 h-screen grid md:grid-cols-2 items-center"
-        >
-          <div
-            className={`${index % 2 === 0 ? "col-start-1" : "col-start-2"} p-12  `}
-          >
-            <h2 className=" text-6xl  text-balance font-bold">
-              {benefit.title}
-            </h2>
-            <p className="text-xl mt-5">{benefit.description}</p>
-          </div>
+    <div className="text-sky-950 relative about bg-yellow-300 ">
+      <div className="">
+        <div className="relative grid">
+          <View className="h-screen alternative-text-view absolute  left-0 top-0 w-full">
+            <SceneAbout />
+          </View>
+          {sodaBenefits.map((benefit, index) => (
+            <div
+              key={index}
+              className="aboutsub gap-x-12 h-screen grid md:grid-cols-2 items-center"
+            >
+              <div
+                className={`${index % 2 === 0 ? "col-start-1" : "col-start-2"} p-12  `}
+              >
+                <h2 className=" text-6xl  text-balance font-bold">
+                  {benefit.title}
+                </h2>
+                <p className="text-xl mt-5">{benefit.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };

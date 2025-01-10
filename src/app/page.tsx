@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import SkyDive from "./components/SkyDive";
 import Carousel from "./components/Carousel";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <SkyDive />
       <Carousel />
       <About />
+      <Footer />
     </div>
   );
 };

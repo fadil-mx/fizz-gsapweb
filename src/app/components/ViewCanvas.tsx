@@ -38,7 +38,7 @@ const ViewCanvas = (props: Props) => {
 enableRotate={true}
  // Set focus point
 /> */}
-        <Perf />
+        {/* <Perf /> */}
       </Canvas>
       <Loader />
     </>
