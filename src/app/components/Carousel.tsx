@@ -83,6 +83,7 @@ const Carousel = (props: Props) => {
     //     y: "-10",
     //     opacity: 0,
     //   ease: "power2.inOut",
+    //   onComplete: () => {}
     //   },
     //   0
     // )
