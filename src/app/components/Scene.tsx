@@ -87,7 +87,7 @@ const Scene = (props: Props) => {
         start: "top top",
         end: "bottom bottom",
         scrub: 1,
-        markers: true,
+        // markers: true,
       },
     });
     scrolltrigger
